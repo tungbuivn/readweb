@@ -1,0 +1,26 @@
+
+<div *ngIf="chapters">
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let chap of chapters.items" (click)="goContent(chap)">
+      <a >
+        {{chap.title}}
+      </a>
+    </li>
+
+  </ul>
+
+    <div>
+        <ul class="col-md-12 btn-group" style="list-style-type: none;">
+            <li *ngIf="chapters.prev.visible" style="display:inline-block;">
+                <a class="btn btn-default" (click)="getChapters(chapters.prev.link)">Preview</a>
+            </li>
+            <li *ngIf="chapters.next.visible" class=" pull-right">
+                <a class="btn btn-default" (click)="getChapters(chapters.next.link)">Next</a>
+            </li>
+        </ul>
+
+    </div>
+</div>
+<div *ngIf="chapters==null">
+    Loading ...
+</div>

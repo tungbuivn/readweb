@@ -1,0 +1,12 @@
+<div class="container-fluid">
+    <div class="navbar-header">
+        <a class="navbar-brand" style="" [routerLink]="['ListSite']">HOME</a>
+    </div>
+    <div class="collapse navbar-collapse">
+        <p class="navbar-text " *ngIf="doc.title!=''">{{doc.title}}</p>
+        <!-- <p class="navbar-text navbar-right">Signed in as</p> -->
+    </div>
+</div>
+
+
+<router-outlet></router-outlet>

@@ -1,0 +1,11 @@
+<div class="grid grid-pad">
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let site of sites" (click)="gotoDetail(site)">
+      <a >
+      {{site.desc}}
+    </a>
+    </li>
+
+  </ul>
+  
+</div>

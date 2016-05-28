@@ -1,0 +1,15 @@
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+a:focus, a:hover {
+
+    text-decoration: none;
+}
+  
+.list-group-item:hover{
+           background-color: #aed248; !important;
+           border-color: #aed248;     !important;
+         }
